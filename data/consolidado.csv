@@ -1,0 +1,30 @@
+id,tipo,ano,elo,erro_principal,erros_secundarios,DOI
+45,primário,2024,1. Preparação,[novo] N1 Calibração e alinhamento sensor-segmento,,10.3390/s24020419
+298,primário,2021,5. Validação,[novo] N2 Referência imperfeita (padrão-ouro sem validade documentada),,10.3389/fdgth.2021.736418
+71,primário,2026,4. Extração da medida,"[novo] N3 Desempenho do algoritmo depende de patologia, velocidade ou dispositivo de auxílio",,10.3390/s26020667
+48,primário,2024,4. Extração da medida,"[novo] N3 Desempenho do algoritmo depende de patologia, velocidade ou dispositivo de auxílio",,10.2196/50035
+56,primário,2023,3. Processamento,5 Dados ausentes e erro de fusão sensorial,1,10.3390/s23177427
+54,revisão,2026,1. Preparação,[novo] N1 Calibração e alinhamento sensor-segmento,2,10.3390/s26165063
+44,revisão,2024,5. Validação,[novo] N4 Validação em população não-alvo (saudáveis/atletas),,10.3390/s24072163
+108,primário,2025,5. Validação,[novo] N5 Critério de confiança clínica: validade intra-sujeito e LoA vs MCID,"N3, N1",10.1123/jab.2025-0098
+64,primário,2024,5. Validação,[novo] N5 Critério de confiança clínica: validade intra-sujeito e LoA vs MCID,"1, 2",10.3389/fdgth.2024.1359776
+58,primário,2025,4. Extração da medida,"[novo] N3 Desempenho do algoritmo depende de patologia, velocidade ou dispositivo de auxílio",2,10.3390/s25165123
+47,revisão,2022,5. Validação,[novo] N4 Validação em população não-alvo (saudáveis/atletas),,10.21037/mhealth-21-17
+172,primário,2021,3. Processamento,1 Deriva de orientação,"10, 2",10.7717/peerj.10623
+126,revisão,2026,4. Extração da medida,"[novo] N3 Desempenho do algoritmo depende de patologia, velocidade ou dispositivo de auxílio",N7,10.3390/brainsci16070662
+154,primário,2025,4. Extração da medida,[novo] N6 Generalização de modelos de aprendizado entre indivíduos e populações,2,10.3390/s25113363
+169,primário,2018,4. Extração da medida,"[novo] N3 Desempenho do algoritmo depende de patologia, velocidade ou dispositivo de auxílio",N2,10.1186/s12938-018-0488-2
+151,primário,2023,1. Preparação,2 Artefato de tecido mole e erro de posicionamento,,10.3390/s23136156
+248,primário,2022,1. Preparação,[novo] N7 Sem consenso de número e posição dos sensores,,10.1186/s12984-022-00992-x
+155,primário,2026,1. Preparação,[novo] N1 Calibração e alinhamento sensor-segmento,2,10.3390/s26061746
+194,primário,2019,1. Preparação,[novo] N1 Calibração e alinhamento sensor-segmento,10,10.1038/s41598-019-50759-z
+112,primário,2025,4. Extração da medida,[novo] N6 Generalização de modelos de aprendizado entre indivíduos e populações,,10.3390/s26010178
+845,primário,2021,3. Processamento,5 Dados ausentes e erro de fusão sensorial,N3,10.1097/jpo.0000000000000332
+319,primário,2018,3. Processamento,2 Artefato de tecido mole e erro de posicionamento,1,10.3390/s18071980
+368,primário,2023,1. Preparação,2 Artefato de tecido mole e erro de posicionamento,,10.3390/s23136013
+433,primário,2022,1. Preparação,[novo] N1 Calibração e alinhamento sensor-segmento,2,10.3390/s22229009
+849,primário,2023,1. Preparação,2 Artefato de tecido mole e erro de posicionamento,,10.1002/acr.25096
+411,primário,2022,4. Extração da medida,2 Artefato de tecido mole e erro de posicionamento,,10.1186/s12984-022-01079-3
+269,primário,2024,3. Processamento,5 Dados ausentes e erro de fusão sensorial,N1,10.3390/s24206580
+335,revisão,2025,2. Aquisição,10 Interferência magnética,"2, N1, N7",10.1186/s13018-025-06322-w
+756,primário,2025,6. Interpretação clínica,[novo] N8 Responsividade e sensibilidade à mudança limitadas,,10.1093/ptj/pzaf021

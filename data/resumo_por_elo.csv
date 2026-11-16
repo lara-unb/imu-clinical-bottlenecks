@@ -1,0 +1,35 @@
+secao,chave,nome,n_artigos,ids,elos_associados,observacao
+por_elo,1,Preparação,9,45 54 151 248 155 194 368 433 849,1,
+por_elo,2,Aquisição,1,335,2,
+por_elo,3,Processamento,5,56 172 845 319 269,3,
+por_elo,4,Extração da medida,8,71 48 58 126 154 169 112 411,4,
+por_elo,5,Validação,5,298 44 108 64 47,5,
+por_elo,6,Interpretação clínica,1,756,6,
+por_gargalo,catálogo 1,Deriva de orientação,5,45 56 64 172 319,1 3 5,conta qualquer citação como principal ou secundária
+por_gargalo,catálogo 2,Artefato de tecido mole e erro de posicionamento,13,45 54 64 58 172 154 151 319 368 433 849 411 335,1 2 3 4 5,conta qualquer citação como principal ou secundária
+por_gargalo,catálogo 5,Dados ausentes e erro de fusão sensorial,3,56 845 269,3,conta qualquer citação como principal ou secundária
+por_gargalo,catálogo 10,Interferência magnética isolada,3,172 194 335,1 2 3,conta qualquer citação como principal ou secundária
+por_gargalo,[novo] N1,Calibração e alinhamento sensor-segmento,7,45 54 155 194 433 269 335,1 2 3,conta qualquer citação como principal ou secundária
+por_gargalo,[novo] N2,Referência imperfeita (padrão-ouro sem validade documentada),2,298 169,4 5,conta qualquer citação como principal ou secundária
+por_gargalo,[novo] N3,"Desempenho do algoritmo depende de patologia, velocidade ou dispositivo",7,71 48 108 58 126 169 845,3 4 5,conta qualquer citação como principal ou secundária
+por_gargalo,[novo] N4,Validação em população não-alvo (saudáveis/atletas),2,44 47,5,conta qualquer citação como principal ou secundária
+por_gargalo,[novo] N5,Critério de confiança clínica (validade intra-sujeito; LoA vs MCID),2,108 64,5,conta qualquer citação como principal ou secundária
+por_gargalo,[novo] N6,Generalização de modelos de aprendizado,2,154 112,4,conta qualquer citação como principal ou secundária
+por_gargalo,[novo] N7,Sem consenso de número e posição dos sensores,3,126 248 335,1 2 4,conta qualquer citação como principal ou secundária
+por_gargalo,[novo] N8,Responsividade e sensibilidade à mudança limitadas,1,756,6,conta qualquer citação como principal ou secundária
+por_gargalo,catálogo 3,Perda de pacotes (WBAN),0,,,sem evidência na amostra lida
+por_gargalo,catálogo 4,Erro de sincronização e de marcação temporal,0,,,sem evidência na amostra lida
+por_gargalo,catálogo 6,Saturação do sensor e ruído,0,,,sem evidência na amostra lida
+por_gargalo,catálogo 7,Falha de energia e bateria,0,,,sem evidência na amostra lida
+por_gargalo,catálogo 8,Interferência entre sensores (cross-talk),0,,,sem evidência na amostra lida
+por_gargalo,catálogo 9,Rigidez e falha de fixação do componente,0,,,sem evidência na amostra lida
+multi_elo,catálogo 1,Deriva de orientação,5,45 56 64 172 319,1 3 5,citado em artigos de elos diferentes (normal para secundários); não indica erro de classificação
+multi_elo,catálogo 2,Artefato de tecido mole e erro de posicionamento,13,45 54 64 58 172 154 151 319 368 433 849 411 335,1 2 3 4 5,citado em artigos de elos diferentes (normal para secundários); não indica erro de classificação
+multi_elo,catálogo 10,Interferência magnética isolada,3,172 194 335,1 2 3,citado em artigos de elos diferentes (normal para secundários); não indica erro de classificação
+multi_elo,[novo] N1,Calibração e alinhamento sensor-segmento,7,45 54 155 194 433 269 335,1 2 3,citado em artigos de elos diferentes (normal para secundários); não indica erro de classificação
+multi_elo,[novo] N2,Referência imperfeita (padrão-ouro sem validade documentada),2,298 169,4 5,citado em artigos de elos diferentes (normal para secundários); não indica erro de classificação
+multi_elo,[novo] N3,"Desempenho do algoritmo depende de patologia, velocidade ou dispositivo",7,71 48 108 58 126 169 845,3 4 5,citado em artigos de elos diferentes (normal para secundários); não indica erro de classificação
+multi_elo,[novo] N7,Sem consenso de número e posição dos sensores,3,126 248 335,1 2 4,citado em artigos de elos diferentes (normal para secundários); não indica erro de classificação
+nao_se_encaixa,[novo] N4,Validação em população não-alvo (saudáveis/atletas),2,44 47,5,nota de classificação diz que não é erro do sinal (ids 44); elo atribuído por aproximação
+nao_se_encaixa,[novo] N8,Responsividade e sensibilidade à mudança limitadas,1,756,6,nota de classificação diz que não é erro do sinal (ids 756); elo atribuído por aproximação
+nao_se_encaixa,elo fora de 1-6,,0,,,nenhum artigo ficou sem elo de 1 a 6
