@@ -1,0 +1,80 @@
+flowchart TB
+  subgraph P["1 · Planning"]
+    direction LR
+    PROT["Narrative review protocol (.docx)"]
+    BRI["briefing_para_claude_project.md"]
+    CTX["contexto-icorr-2027.md"]
+    CAT["catalogo-perda-dados-imu.md"]
+    ERR["10_erros_mapeados_IMU.md"]
+    STR["strings-busca.md"]
+  end
+  subgraph E["2 · Database exports"]
+    direction LR
+    PMA["pubmed_A3_2026-11-15.txt"]
+    PMB["pubmed_B_2026-11-15.txt"]
+    SCA["scopus_A3_2026-11-13.csv"]
+    SCB["scopus_B_2026-11-15.csv"]
+    IEA["ieee_A_2026-11-15.ris"]
+  end
+  subgraph D["3 · Screening and extraction data"]
+    direction LR
+    MET["metodo-busca-dados.md"]
+    TRI["triagem.csv"]
+    EXT["extracao.csv"]
+    CON["consolidado.csv"]
+    RES["resumo_por_elo.csv"]
+  end
+  FT["Full texts in the project (PDFs)<br/>047 Mobbs 2022 · 054 Ceriola 2026 · 064 Unger 2024<br/>112 Toyoshima 2025 · 151 Cerfoglio 2023 · 154 Alalem 2025<br/>194 Picerno 2019 · 298 Laidig 2021 · 433 Jiang 2022<br/>ID173 Blandeau 2026 · Favata 2024 · Sengupta 2024 · McGinley 2009"]
+  METH["Method references (PDFs)<br/>Baethge 2019 · Sukhera 2022 · Green 2006<br/>Dennstädt 2024 · Adam 2026 · Khraisha 2024"]
+  subgraph W["4 · Writing and checks"]
+    direction LR
+    RAS["rascunho-artigo-v1.md"]
+    REV["revisao-critica-v1.md"]
+    PEN["pendencias-revisao-v1.md"]
+    REF["referencias-ieee-v1.md"]
+    TEX["artigo-ieee-v2.tex"]
+    PT["versao-pt-v2.md"]
+    GUI["guia-estudo-v2.md"]
+    VAL["validacao-metricas-artigo.xlsx"]
+    SUP["material-suplementar.md"]
+  end
+  PROT --> STR
+  STR --> PMA & PMB & SCA & SCB & IEA
+  PMA & PMB & SCA & SCB & IEA --> MET
+  MET --> TRI
+  METH -.-> TRI
+  TRI --> EXT
+  FT --> EXT
+  CAT --> ERR --> EXT
+  EXT --> CON
+  EXT --> RES
+  EXT --> RAS
+  RES --> RAS
+  BRI --> CTX --> RAS
+  METH -.-> RAS
+  RAS --> REV --> PEN
+  RAS --> TEX
+  REF --> TEX
+  TEX --> PT & GUI & VAL
+  EXT --> VAL
+  FT --> VAL
+  STR --> SUP
+  MET --> SUP
+  TRI --> SUP
+  SUP -.-> TEX
+  classDef plan fill:#eef2ff,stroke:#6366f1,color:#1e1b4b
+  classDef meth fill:#fdf4ff,stroke:#c026d3,color:#4a044e
+  classDef exp fill:#ecfeff,stroke:#0891b2,color:#083344
+  classDef dat fill:#fefce8,stroke:#ca8a04,color:#422006
+  classDef full fill:#f0fdf4,stroke:#16a34a,color:#052e16
+  classDef wr fill:#fff1f2,stroke:#e11d48,color:#4c0519
+  class PROT,BRI,CTX,ERR,CAT,STR plan
+  class METH meth
+  class PMA,PMB,SCA,SCB,IEA exp
+  class MET,CON,TRI,EXT,RES dat
+  class FT full
+  class RAS,REV,PEN,REF,TEX,PT,GUI,VAL,SUP wr
+  style P fill:#f8f9ff,stroke:#c7d2fe
+  style E fill:#f4fcfe,stroke:#a5f3fc
+  style D fill:#fffdf0,stroke:#fde68a
+  style W fill:#fff7f8,stroke:#fecdd3
