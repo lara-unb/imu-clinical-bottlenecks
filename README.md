@@ -1,2 +1,2 @@
 # imu-clinical-bottlenecks
-Materiais complementares de uma revisão narrativa sobre os gargalos que limitam a confiança clínica de medidas de movimento humano por IMU, organizada em uma cadeia de medição de seis elos. Inclui estratégias de busca, triagem e extração de dados. Preparado para o ICORR 2027.
+Companion materials for a narrative review on the bottlenecks that limit the clinical confidence of IMU-based human movement measures, organized along a six-link measurement chain. Includes search strategies, screening and data extraction. Prepared for ICORR 2027.
