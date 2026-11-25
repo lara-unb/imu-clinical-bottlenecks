@@ -9,7 +9,7 @@ Supplementary material for the narrative review *Where Clinical Confidence Is Lo
 | `material-suplementar.md` | S1 search strings, S2 record counts, S3 eligibility criteria, S4 screening flow and priority rule |
 | `docs/index.html` | Same content as a web page (enable GitHub Pages on `/docs`) |
 | `data/triagem.csv` | 166 records read at abstract level: id, DOI, title, year, source string, type, decision, criterion, priority |
-| `data/consolidado.csv` | 29 articles extracted from full text, with measurement-chain link and main error |
+| `data/consolidado.csv` | 30 articles extracted from full text and analysed in the paper, with measurement-chain link and main error |
 | `data/resumo_por_elo.csv` | Counts of articles per link of the chain and per limiting factor |
 | `diagram/arquivos-do-artigo.mmd` / `.svg` | Map of the files used to build the article (Mermaid source and image) |
 

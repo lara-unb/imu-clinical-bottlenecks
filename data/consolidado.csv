@@ -28,3 +28,4 @@ id,tipo,ano,elo,erro_principal,erros_secundarios,DOI
 269,primário,2024,3. Processamento,5 Dados ausentes e erro de fusão sensorial,N1,10.3390/s24206580
 335,revisão,2025,2. Aquisição,10 Interferência magnética,"2, N1, N7",10.1186/s13018-025-06322-w
 756,primário,2025,6. Interpretação clínica,[novo] N8 Responsividade e sensibilidade à mudança limitadas,,10.1093/ptj/pzaf021
+174,primário,2026,1. Preparação,2 Artefato de tecido mole e erro de posicionamento,N7,10.1016/j.jbiomech.2026.113444
