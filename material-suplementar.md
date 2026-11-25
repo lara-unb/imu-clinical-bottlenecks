@@ -1,6 +1,6 @@
 # Supplementary Material
 
-Where Clinical Confidence Is Lost: Bottlenecks in the Measurement Chain of IMU-Based Human Movement Analysis
+Where Clinical Confidence Is Lost: Limiting Factors in the Measurement Chain of IMU-Based Human Movement Analysis
 
 ## S1. Search strings
 
@@ -68,8 +68,9 @@ Duplicates removed: 526 (by DOI, then PMID, then normalized title), leaving 885.
 | Abstracts read (probable only) | 166 |
 | Included / excluded after abstract (doubt excluded) | 138 / 28 |
 | Priority among included: high / medium / low | 48 / 75 / 15 |
-| High priority extracted from full text | 30 (25 primary, 5 reviews) |
-| High priority not obtained | 18 |
+| High priority extracted from full text, used in the paper | 30 of 48 (25 primary, 5 reviews) |
+| High priority extracted afterwards (not in the paper's counts) | 16 |
+| High priority not obtained | 2 |
 
 Title and abstract decisions by search string (records retrieved by String A, alone or with String B, versus String B alone):
 
@@ -78,7 +79,7 @@ Title and abstract decisions by search string (records retrieved by String A, al
 | Title: probable / doubtful / discard | 131 / 176 / 18 | 35 / 237 / 251 | 166 / 413 / 269 |
 | Abstract: included / excluded | 114 / 17 | 24 / 11 | 138 / 28 |
 
-Of the 28 records excluded after the abstract, 15 had been classed as doubtful and were excluded because of time constraints (all retrieved by String A only). Of the 413 doubtful titles (176 retrieved by String A, 237 only by String B), 412 were not read at abstract level; one was read during the check of records removed by the term filter and remained doubtful.
+Of the 28 records excluded after the abstract, 15 had been classed as doubtful and were excluded because of time constraints (all retrieved by String A only). Of the 413 doubtful titles (176 retrieved by String A, 237 only by String B), 412 were not read at abstract level; one was read during the check of records removed by the term filter and remained doubtful. The 412 were read later; see the next section.
 
 **Priority rule.** The rule was formulated with the screening language model and approved by the author, and was applied as a judgement on each included record rather than computed from fields.
 
@@ -87,3 +88,17 @@ Of the 28 records excluded after the abstract, 15 had been classed as doubtful a
 - **Low:** healthy participants, no quantified error, or population not reported.
 
 Two of the 48 high-priority records are healthy-participant studies admitted under the conditional clause. Only the high-priority records were selected for full-text extraction.
+
+**Later screening of the 413 doubtful titles.** The 413 doubtful titles were screened afterwards at abstract level, in four parts.
+
+- Part 1 (first author): 104 titles, 41 included, 59 excluded, 4 left doubtful. Twenty hidden controls (10 titles the LLM had classified probable, 10 discard) were added to this part to measure agreement between the first author and the LLM: Cohen's kappa 0.60 (observed agreement 16/20, expected by chance 50%; bootstrap 95% interval 0.21–0.90). With 20 controls the estimate is imprecise.
+- Parts 2–4 (LLM alone, Claude Sonnet 5.5): 309 titles. Part 2: 38 included, 66 excluded (104). Part 3: 31 included, 73 excluded (104). Part 4: 36 included, 65 excluded (101). Total 105 included, 204 excluded. These decisions were not checked individually by the first author. The written criteria were drafted with the LLM from the first author's decisions on part 1 and approved by the first author.
+- The 146 records included in the later screening (41 + 105) were not extracted.
+
+**Criteria used in parts 2–4.** A literal rule, applied to title and abstract, with no "doubtful" category.
+
+- Include when both hold: (I1) a wearable inertial sensor (IMU, accelerometer, gyroscope or magnetometer) measures human movement; (I2) the record reports validity (comparison with a reference such as optical motion capture) or reliability (test-retest, ICC, agreement) of the sensor-derived measure.
+- Exclude when any holds: (E1) no inertial sensor (for example single camera, EMG only, instrumented treadmill); (E2) no validity or reliability measure (only use description, protocol or outcome reporting); (E3) not human movement (animal, no human participants); (E4) no usable abstract.
+- Priority in parts 2–4: high when the title or abstract cites at least one kinematic descriptor (joint angle, angular velocity, range of motion or extension, step or stride length, turning velocity); medium otherwise. This descriptor-based priority is different from the error-based rule used for the first 166 records, and no extraction was done from parts 2–4.
+
+**Use of AI.** An LLM (Claude Sonnet 5.5, Anthropic) was used for screening and extraction under the first author's protocol; see the Acknowledgment of the paper.
